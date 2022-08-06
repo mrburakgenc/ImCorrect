@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:paddingLeft="0dp" android:paddingTop="0dp" android:paddingRight="0dp" android:paddingBottom="0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/zorsol"
+        android:layout_width="150dp"
+        android:layout_height="1000dp"
+        android:layout_alignTop="@+id/zorsag"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:background="@null"
+        android:contentDescription="@string/app_name"
+        android:src="#474747" />
+
+    <ImageButton
+        android:id="@+id/zorsag"
+        android:layout_width="150dp"
+        android:layout_height="1000dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:contentDescription="@string/app_name"
+        android:src="#000000" />
+    <ImageView android:id="@+id/imageView5" android:layout_width="90dp" android:layout_height="1000dp" android:src="#ffffff" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/zok" android:layout_width="150dp" android:layout_height="150dp" android:src="@null" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    <ProgressBar android:id="@+id/zprogressBar" android:layout_width="350dp" android:layout_height="40dp" android:layout_marginTop="55dp" android:max="100" android:progress="1" android:indeterminate="false" android:progressDrawable="@drawable/progress" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="?android:attr/progressBarStyleHorizontal"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="40dp" android:textColor="#ff6600" android:id="@+id/uskortabelasi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/zprogressBar" android:layout_centerHorizontal="true"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#ff6600" android:id="@+id/uzmanhak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@+id/zok" android:layout_toEndOf="@+id/imageView5"/>
+</RelativeLayout>
